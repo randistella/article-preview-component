@@ -1,0 +1,30 @@
+/* SCSS HEX */
+$paynes-gray: #48556Aff;
+$cadet-gray: #91A0B5ff;
+$alice-blue: #EDF2F8ff;
+$white: #FEFEFFff;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $alice-blue;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+
+    .container {
+        background: $white;
+        display: flex;
+    }
+}

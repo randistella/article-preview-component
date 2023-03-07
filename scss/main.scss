@@ -16,7 +16,6 @@ body {
     background: $alice-blue;
     font-family: 'Manrope', sans-serif;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -26,5 +25,39 @@ body {
     .container {
         background: $white;
         display: flex;
+        border-radius: 30px;
+        overflow: hidden;
+        max-width: 1100px;
+        height: 350px;
+
+        .picBox {
+            background-image: url("../../images/drawers.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-position: 50% 30%;
+            max-width: 450px;
+        }
+    
+        .textBox {
+            max-width: 900px;
+            padding: 50px;
+
+            h2, p {
+                line-height: 1.6;
+            }
+
+            .idBox {
+                display: flex;
+                margin: 20px 0;
+                
+                img {
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 100%;
+                    margin-right: 10px;
+                }
+            }
+        }
     }
 }

@@ -26,9 +26,10 @@ body {
         background: $white;
         display: flex;
         border-radius: 10px;
-        overflow: hidden;
         max-width: 1100px;
-        height: 320px;
+        height:auto;
+        // overflow: hidden;
+        // height: 320px;
 
             .picBox {
                 background-image: url("../../images/drawers.jpg");
@@ -40,8 +41,9 @@ body {
             }
         
             .textBox {
+                position: relative;
                 max-width: 900px;
-                padding: 50px;
+                padding: 40px;
 
                 h2 { 
                     margin-bottom: 20px;
@@ -55,7 +57,9 @@ body {
                 .idBox {
                     display: flex;
                     width: 100%;
-                    margin: 20px 0;
+                    margin: 20px 0 0 0;
+                    // justify-content: center;
+                    align-items: center;
 
                     p {
                         font-size:12px;
@@ -72,7 +76,8 @@ body {
                 .share {
                     background: $paynes-gray;
                     position:absolute;
-                    right: 200px;
+                    right: 65px;
+                    top: 270px;
                     width: 30px;
                     height: 30px;
                     color: #fff;
@@ -89,15 +94,13 @@ body {
                         height: 50px;
                         border-radius: 10px;
                         position:absolute;
-                        // left: 920px;
-                        top: 350px;
-                        right: 200px;
+                        left: 350px;
+                        top: 200px;
                 }
-                
+
                 .hide {
-                        display:none;
-                }
+                    display:none;
                 }
             }
         }
-    
+}
